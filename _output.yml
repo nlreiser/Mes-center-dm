@@ -1,8 +1,11 @@
-bookdown::gitbook:
-  css: style.css
+bookdown::bs4_book:
+  css: bs4_style.css
+  theme:
+    primary: "#B2A4FF" # Color of Chapters and headings.
+  repo:
+    base: https://github.com/nlreiser/mes-ctr-sop
+    branch: main
   config:
-    toc:
-      before: |
-        <li><a href="./">Mesulam Center Data Management</a></li>
-      after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    search:
+      engine: fuse # lunr is the default
+      options: null 
