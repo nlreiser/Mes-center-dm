@@ -1,6 +1,6 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAME HERE"
+title: "Mesulam Center Data Management Practices"
+author: "Nina Reiser"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
