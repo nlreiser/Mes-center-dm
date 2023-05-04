@@ -3,7 +3,7 @@ bookdown::bs4_book:
   theme:
     primary: "#B2A4FF" # Color of Chapters and headings.
   repo:
-    base: https://github.com/nlreiser/mes-ctr-sop
+    base: https://github.com/nlreiser/Mes-ctr-dm/
     branch: main
   config:
     search:
