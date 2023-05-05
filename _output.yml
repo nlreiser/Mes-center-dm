@@ -1,7 +1,7 @@
 bookdown::bs4_book:
   css: bs4_style.css
   theme:
-    primary: "#B2A4FF" # Color of Chapters and headings.
+    primary: "#52006A" # Color of Chapters and headings.
   repo:
     base: https://github.com/nlreiser/Mes-ctr-dm/
     branch: main

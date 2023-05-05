@@ -1,0 +1,40 @@
+# Data Request SOP 
+
+## Creating a New Data Request 
+
+1.	Navigate to the ‘Mesulam Center Data Requests’ database in REDCap.
+2.	Under the ‘Data Collection’ tab on the left panel, select [‘Add/Edit Records’](https://redcap.nubic.northwestern.edu/redcap/redcap_v13.1.25/DataEntry/record_home.php?pid=7662).
+3.	Click the large green ‘+ Add new record’ button. This will create a new Record ID and allow you to select the ‘Data Request’ and ‘Status’ Instruments. 
+```{r, echo=FALSE, fig.cap="", out.width = '50%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("new_dr_record.png")
+```
+
+## [Filling out the Data Request Form: Video]("https://nuwildcat.sharepoint.com/:v:/s/FSM-MesulamCenterDataMgmt/EXN7DxUlHjlMoDAduulA2KYBL7dPVvqQhys-SVUhox7Q8g?e=x1vP9R")
+
+
+
+### Filling out the Data Request Form 
+1. Select the Data Request Instrument button under the Data Collection Instruments. 
+1. Fill out the ‘Request Information’ and ‘Requestor Information’ Sections.
+a.	Enter the Date of request, Requestor name, and Requestor email. This can be the person filling out the form or the person who requested the data. 
+b.	Enter the names of anyone else involved with or knowledgeable of the request.
+c.	Select the type of Data Request.
+3.	Fill out the ‘Request Data’ Section. 
+a.	Write a brief description of the data request. This should be a few sentences about what is needed for the data request and, if known, why it is being requested.
+b.	Enter a short description of the request. This should be a few words and is used to create the file name where all documents for this data request will be stored. 
+i.	 
+ii.	Create a new folder in the Data Requests Sharepoint. Copy and paste the calculated ‘File name’ to name the new folder. This is where all files for this data request will be stored. 
+c.	Select the UDS version(s) needed. 
+i.	For current REDCap data, select UDS3. 
+ii.	For historical data in StudyTracker, select MDS/UDS1/UDS2.
+d.	Select the location(s) of the raw data for the request.
+4.	Fill out the ‘Request Tagging’ Section. 
+a.	Select an ‘Impact/Need’ score on the slider scale. 
+b.	Select if there is any concern about the completion of the project.
+c.	Select the ‘Scope’ of the project. 
+d.	Select the approximate total time ‘Duration’ to finish the project. 
+e.	The above fields will return a priority score, which can be used to prioritize all in-progress projects. 
+f.	Select the reason(s) for the scope choice.
+5.	Fill out the ‘Storage Locations’ Section – this can be done immediately or when the data request is complete. 
+a.	Paste the link to the Data Request folder. 
+i.	In Sharepoint, left click on the folder of the data request. Select ‘Share’. A window will pop up with options to send the link to the folder.  
