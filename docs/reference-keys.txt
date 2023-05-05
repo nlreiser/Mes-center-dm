@@ -1,7 +1,10 @@
 down-the-rabbit-hole
 data-request-sop
 creating-a-new-data-request
-filling-out-the-data-request-form-video
-filling-out-the-data-request-form
+fill-out-the-data-request-form
+fill-out-the-status-instrument
+completing-the-data-request
+creating-the-data-dictionary
+documenting-the-data-request
 the-pool-of-tears
 a-caucus-race-and-a-long-tale
