@@ -51,6 +51,7 @@ knitr::include_graphics(c("share_file.png","share_people_specify.png","share_exi
         i. If Pasting a link, follow steps 8a-i. through 8a-iv.
 6. Always mark the Form Status ‘Complete’. Save and Exit Form.
 
+
 ## Fill out the Status Instrument 
 
 7. Select the Status Instrument button under the Data Collection Instruments. 
