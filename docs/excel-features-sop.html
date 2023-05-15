@@ -222,7 +222,58 @@ of a participant, use the following statement in the formula bar
 <span style="color: #FF0000">global_id_cell_2</span>,
 <span style="color: #7030A0">ptid_cell_1</span>=
 <span style="color: #00B050">ptid_cell_2</span>),
-<span style="color: #ED7D31">sex_cell_1</span>,””)</li>
+<span style="color: #ED7D31">sex_cell_1</span>,””)
+<ol start="2" style="list-style-type: lower-alpha">
+<li>The above statement is saying in plain English: If the
+<span style="color: #0070C0">global id of cell 1</span> equals the
+<span style="color: #FF0000">global id of cell 2</span> and the
+<span style="color: #7030A0">ptid of cell 1</span> equals the
+<span style="color: #00B050">ptid of cell 2</span>, then the current cell equals the
+<span style="color: #ED7D31">sex of cell 1</span>. Else, leave the current cell
+blank (if global ids, or ptids, or both are not the same between the rows).</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="delete-empty-rows" class="section level2" number="3.6">
+<h2>
+<span class="header-section-number">3.6</span> Delete Empty Rows<a class="anchor" aria-label="anchor" href="#delete-empty-rows"><i class="fas fa-link"></i></a>
+</h2>
+<p><i>The following steps can be used to delete any completely empty rows from a
+spreadsheet. This will keep any rows that contain some information. If you
+export data and for any reason it has missing rows (see below) this is a quick
+and easy trick to remove those.</i>
+<img src="empty_rows_excel.png" width="100%" style="background-color: #41444B; padding:2px;"></p>
+<ol style="list-style-type: decimal">
+<li><p>At the end of the data, add a new column labeled ‘Blanks’.</p></li>
+<li>
+<p>In the first cell of the ‘Blanks’ column, enter the formula as shown below
+for any columns that should contain data.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Enter ‘=COUNTA()’ in the formula bar.</li>
+<li>Within the parenthesis, select all columns in the specific row that
+should contain data.</li>
+<li>Press ‘Enter’ to enter the formula.
+<img src="blanks_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</li>
+<li><div class="inline-figure">Double click or drag the green box in the lower right corner of the cell to
+fill down the formula.
+<img src="drag_corner_excel.png" width="10%" style="background-color: #41444B; padding:2px;">
+Any 0 values indicate that the row is empty. Any value
+greater than 0 indicates that at least one column has data.</div></li>
+<li>
+<p>Filter and delete all blank rows.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Select the ‘Blanks’ column. Navigate to the filter window. Unselect all
+except ‘0’ values.
+<img src="delete_blank_rows_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>Select all the rows with 0 values. Left click and select ‘Delete Row’.</li>
+</ol>
+</li>
+<li><p>Clear the filter. All empty rows will now be gone from the spreadsheet.</p></li>
 </ol>
 </div>
 </div>
@@ -238,6 +289,7 @@ of a participant, use the following statement in the formula bar
 <li><a class="nav-link" href="#filter-data"><span class="header-section-number">3.3</span> Filter Data</a></li>
 <li><a class="nav-link" href="#sort-data"><span class="header-section-number">3.4</span> Sort Data</a></li>
 <li><a class="nav-link" href="#fill-empty-data"><span class="header-section-number">3.5</span> Fill Empty Data</a></li>
+<li><a class="nav-link" href="#delete-empty-rows"><span class="header-section-number">3.6</span> Delete Empty Rows</a></li>
 </ul>
 
       <div class="book-extra">

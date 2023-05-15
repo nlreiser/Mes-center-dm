@@ -89,8 +89,9 @@ The purpose of the data documentation for a Data Request is to explain everythin
 * What data was pulled – which variables were pulled from each database.
 * What was done to the data after it was pulled – additional filtering or sorting, adding comments/variables, calculations, etc.
 
-A. If the documentation only consists of a few sentences or a few short paragraphs, it can be entered directly into the Data Request Form Documentation textbox.
-B. If the documentation requires a longer explanation, create a word document and paste the link to the documentation into the Data Request Form Documentation textbox. 
+<b>A.</b> If the documentation only consists of a few sentences or a few short paragraphs, it can be entered directly into the Data Request Form Documentation textbox.
+
+<b>B.</b> If the documentation requires a longer explanation, create a word document and paste the link to the documentation into the Data Request Form Documentation textbox. 
 
 
 

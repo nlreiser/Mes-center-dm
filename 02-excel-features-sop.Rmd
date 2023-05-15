@@ -165,8 +165,50 @@ use an AND statement and separate matching criteria by a comma:
 <span style="color: #7030A0">ptid_cell_1</span>=
 <span style="color: #00B050">ptid_cell_2</span>),
 <span style="color: #ED7D31">sex_cell_1</span>,””)
+    b. The above statement is saying in plain English: If the 
+    <span style="color: #0070C0">global id of cell 1</span> equals the 
+    <span style="color: #FF0000">global id of cell 2</span> and the 
+    <span style="color: #7030A0">ptid of cell 1</span> equals the 
+    <span style="color: #00B050">ptid of cell 2</span>, then the current cell equals the 
+    <span style="color: #ED7D31">sex of cell 1</span>. Else, leave the current cell 
+    blank (if global ids, or ptids, or both are not the same between the rows). 
 
 
+## Delete Empty Rows
+<i>The following steps can be used to delete any completely empty rows from a 
+spreadsheet. This will keep any rows that contain some information. If you 
+export data and for any reason it has missing rows (see below) this is a quick 
+and easy trick to remove those.</i>
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("empty_rows_excel.png")
+```
+
+1. At the end of the data, add a new column labeled ‘Blanks’. 
+2. In the first cell of the ‘Blanks’ column, enter the formula as shown below 
+for any columns that should contain data. 
+    a. Enter ‘=COUNTA()’ in the formula bar.
+    b. Within the parenthesis, select all columns in the specific row that 
+    should contain data. 
+    c. Press ‘Enter’ to enter the formula. 
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("blanks_excel.png")
+```
+3. Double click or drag the green box in the lower right corner of the cell to 
+fill down the formula. 
+```{r, echo=FALSE, fig.cap="", out.width = '10%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("drag_corner_excel.png")
+```
+Any 0 values indicate that the row is empty. Any value 
+greater than 0 indicates that at least one column has data. 
+
+4. Filter and delete all blank rows. 
+    a. Select the ‘Blanks’ column. Navigate to the filter window. Unselect all 
+    except ‘0’ values.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("delete_blank_rows_excel.png")
+```
+    b. Select all the rows with 0 values. Left click and select ‘Delete Row’. 
+5. Clear the filter. All empty rows will now be gone from the spreadsheet. 
 
 
 

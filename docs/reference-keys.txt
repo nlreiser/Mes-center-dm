@@ -14,3 +14,4 @@ find-replace
 filter-data
 sort-data
 fill-empty-data
+delete-empty-rows
