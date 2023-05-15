@@ -3,7 +3,6 @@ title: "Mesulam Center Data Management Practices"
 author: "Nina Reiser"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-link-citations: yes
 ---
 
 
