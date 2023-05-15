@@ -8,3 +8,9 @@ fill-out-the-status-instrument
 completing-the-data-request
 creating-the-data-dictionary
 documenting-the-data-request
+excel-features-sop
+find
+find-replace
+filter-data
+sort-data
+fill-empty-data

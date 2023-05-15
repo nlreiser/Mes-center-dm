@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 3 Excel Features SOP | Mesulam Center Data Management Practices</title>
+<meta name="author" content="Nina Reiser">
+<meta name="generator" content="bookdown 0.33 with bs4_book()">
+<meta property="og:title" content="Chapter 3 Excel Features SOP | Mesulam Center Data Management Practices">
+<meta property="og:type" content="book">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 3 Excel Features SOP | Mesulam Center Data Management Practices">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="bs4_style.css">
+<meta name="description" content="This document functions as an instruction manual for Excel features commonly used after a REDCap Report is downloaded. All examples were created using the az_demo and az_test datasets from the...">
+<meta property="og:description" content="This document functions as an instruction manual for Excel features commonly used after a REDCap Report is downloaded. All examples were created using the az_demo and az_test datasets from the...">
+<meta name="twitter:description" content="This document functions as an instruction manual for Excel features commonly used after a REDCap Report is downloaded. All examples were created using the az_demo and az_test datasets from the...">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Mesulam Center Data Management Practices</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="data-request-sop.html"><span class="header-section-number">2</span> Data Request SOP</a></li>
+<li><a class="active" href="excel-features-sop.html"><span class="header-section-number">3</span> Excel Features SOP</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/nlreiser/Mes-center-dm/">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="excel-features-sop" class="section level1" number="3">
+<h1>
+<span class="header-section-number">3</span> Excel Features SOP<a class="anchor" aria-label="anchor" href="#excel-features-sop"><i class="fas fa-link"></i></a>
+</h1>
+<p>This document functions as an instruction manual for Excel features commonly
+used after a REDCap Report is downloaded. All examples were created using the
+az_demo and az_test datasets from the Candidate Data Challenge, which contain
+computer-generated sample data.</p>
+<p><b>Note:</b> <i>An important step to conserve the order of the original data is to add an
+index column. Left click the first column. Select ‘Insert’ from the dropdown.
+Title the new column ‘Index’. Enter a 1 in the first row with data, a 2 to the
+second row, and a 3 to the third row. Select the cells with the 1, 2, and 3
+indexes. Double-click on the small box on the lower right-hand side of the
+selected cells, which will auto-populate index values for all rows that contain
+data.</i></p>
+<div id="find" class="section level2" number="3.1">
+<h2>
+<span class="header-section-number">3.1</span> Find<a class="anchor" aria-label="anchor" href="#find"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Highlight the data you wish to search. Use the shortcut ‘Ctrl + F’ on a
+Windows or ‘Cmd + F’ on a Mac OR select the magnifying glass icon
+<img src="search_icon_excel.png" width="7%" style="background-color: #41444B; padding:2px;">
+in the navigation pane.</li>
+<li>Enter the search keywords into the search bar and press enter to view.</li>
+<li>Continuing to press enter will cycle through all locations of the search keyword in the spreadsheet.
+Ex:
+<img src="search_bar_excel.png" width="40%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>For a more advanced search, use the ‘Advanced Search’ window.
+<img src="advanced_search_excel.png" width="105%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</div>
+<div id="find-replace" class="section level2" number="3.2">
+<h2>
+<span class="header-section-number">3.2</span> Find &amp; Replace<a class="anchor" aria-label="anchor" href="#find-replace"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li><p>Highlight the data you wish to search and replace. This can include a single
+or multiple columns, or the entire spreadsheet.</p></li>
+<li><p>Use the shortcut ‘Ctrl + F’ on a
+Windows or ‘Cmd + F’ on a Mac OR select the magnifying glass icon
+<img src="search_icon_excel.png" width="7%" style="background-color: #41444B; padding:2px;">
+in the navigation pane and select ‘Replace…’ from the dropdown.
+<img src="replace_button_excel.png" width="15%" style="background-color: #41444B; padding:2px;"></p></li>
+<li><p>Enter the search keywords into the ‘Find what’ search bar.</p></li>
+<li><div class="inline-figure">Enter the replacement into the ‘Replace with’ search bar.
+Ex: Replace a PTID with leading zeros.
+<img src="find_and_replace_excel.png" width="90%" style="background-color: #41444B; padding:2px;">
+</div></li>
+<li><p>Click ‘Replace’ for a single cell replacement or ‘Replace All’ to replace all selected data.</p></li>
+</ol>
+</div>
+<div id="filter-data" class="section level2" number="3.3">
+<h2>
+<span class="header-section-number">3.3</span> Filter Data<a class="anchor" aria-label="anchor" href="#filter-data"><i class="fas fa-link"></i></a>
+</h2>
+<p><i>Filters can be used to obtain desired data or remove unwanted data. To remove
+unwanted data from a spreadsheet, filter the data to obtain what is NOT wanted,
+then delete those rows. When the ‘Clear’ filter is applied, the undesired rows
+will be removed from the spreadsheet. A filter will not remove the rows from the
+spreadsheet until the user manually deletes the rows.</i></p>
+<ol style="list-style-type: decimal">
+<li>To Sort or Filter data, begin by selecting the columns or rows you wish to
+filter. To add filters to all columns, click the downward triangle icon
+<img src="select_all_excel.png" width="5%" style="background-color: #FFFFFF; padding:2px;">
+in the upper lefthand corner of the spreadsheet. This selects all data in the
+spreadsheet.</li>
+<li>Navigate to the Editing dropdown on the Home tab in Excel.
+<img src="sort_and_filter_tab_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>Click ‘Sort &amp; Filter’ for a dropdown and select ‘Filter’. The columns that
+were selected will now have a dropdown arrow.</li>
+</ol>
+<div class="inline-figure"><img src="filter_button_excel.png" width="50%" style="background-color: #41444B; padding:2px;"></div>
+<ol start="4" style="list-style-type: decimal">
+<li><div class="inline-figure">Select the arrow next to the column you would like to use as a filter. A box
+will pop up for the filter selection criteria.
+<img src="filter_options_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
+</div></li>
+<li>
+<p>Select all necessary criteria and ‘Apply Filter’.</p>
+<ol style="list-style-type: lower-alpha">
+<li>
+<b>Note:</b> if a filter is being used to view and delete unwanted rows, after
+applying the filter only the unwanted rows will be left. Select the rows to
+be deleted and delete as normal. When the filter is cleared, only the desired
+rows will be left in the spreadsheet.</li>
+</ol>
+</li>
+<li><p>To clear a filter and view all rows of data, repeat steps 2 and 3 but select
+the ‘Clear’ option instead. All data that was not manually deleted will remain.</p></li>
+</ol>
+</div>
+<div id="sort-data" class="section level2" number="3.4">
+<h2>
+<span class="header-section-number">3.4</span> Sort Data<a class="anchor" aria-label="anchor" href="#sort-data"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>To Sort or Filter data, begin by selecting the columns or rows you wish to
+filter. To add filters to all columns, click the downward triangle icon
+<img src="select_all_excel.png" width="5%" style="background-color: #FFFFFF; padding:2px;">
+in the upper lefthand corner of the spreadsheet. This selects all data in the spreadsheet.</li>
+<li>Navigate to the Editing dropdown on the Home tab in Excel.
+<img src="sort_options_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>Click ‘Sort &amp; Filter’ for a dropdown and select one of the three sort options:
+<ol style="list-style-type: lower-alpha">
+<li>‘Sort A to Z’ sorts alphabetically or numerically in ascending order.</li>
+<li>‘Sort Z to A’ sorts alphabetically or numerically in descending order.</li>
+<li>‘Custom Sort…’ opens a window for further sorting criteria.
+<img src="custom_sort_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</li>
+</ol>
+<p>Ex: Sort all data first by date of birth, then by race. Select the column ‘dob’
+and order ‘Oldest to Newest’. Then select the ‘+’ to add another sort criteria.
+Select the column ‘race’ and order ‘A to Z’.</p>
+<div class="inline-figure"><img src="sort_order_excel.png" width="70%" style="background-color: #41444B; padding:2px;"></div>
+<ol start="4" style="list-style-type: decimal">
+<li>Enter all sorting criteria, then select ‘OK’. The selected data will now be sorted using your desired order.</li>
+<li>To revert to original order, sort by the index column in ascending order.</li>
+</ol>
+</div>
+<div id="fill-empty-data" class="section level2" number="3.5">
+<h2>
+<span class="header-section-number">3.5</span> Fill Empty Data<a class="anchor" aria-label="anchor" href="#fill-empty-data"><i class="fas fa-link"></i></a>
+</h2>
+<p><i>The Fill function allows the user to specify criteria to fill in any cells
+with missing data. This is a useful tool when certain information is only in one
+row of the data, but needs to be entered in all rows with the same Global ID,
+PTID, name, etc. </i></p>
+<ol style="list-style-type: decimal">
+<li>Starting data will look something like below: data for certain columns will
+be missing for specific rows. For example, stub information might only appear
+for stub events and will not be in the visit rows of data. This information
+will be filled using the fill function.</li>
+<li>Select the column you need to fill. Press ‘Ctrl + G’ for the ‘Go To’ pop-up
+window in Excel. Select ‘Special…’. A new pop-up window will appear. Select
+‘Blanks’ and press OK. All empty cells will be highlighted.
+<img src="select_empty_cells_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>In the formula bar, enter the formula that matches the necessary criteria to
+fill the cell.
+<ol style="list-style-type: lower-alpha">
+<li>In this example, the formula is saying “If the id in
+<span style="color: #0070C0">cell 1-4 (1003)</span> is equal to the id in
+<span style="color: #FF0000">cell 1-5 (1003)</span>, then the current cell
+equals the sex in <span style="color: #7030A0">cell 2-4 (Male)</span>. Else,
+leave the current cell blank (the id in cell 1-4 does not equal the id in cell 1-5).”</li>
+</ol>
+</li>
+<li>Press ‘Ctrl + Enter’ to carry the formula into each empty cell. The Excel
+formula will automatically move to the next cells down.
+<img src="fill_empty_cells_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>If more than one column needs to be matched before filling the empty cells,
+use an AND statement and separate matching criteria by a comma:
+<ol style="list-style-type: lower-alpha">
+<li>Ex: If both Global ID and PTID needed to be the same to fill in the name
+of a participant, use the following statement in the formula bar
+(highlighting the cells accordingly):</li>
+</ol>
+=IF(AND(<span style="color: #0070C0">global_id_cell_1</span>=
+<span style="color: #FF0000">global_id_cell_2</span>,
+<span style="color: #7030A0">ptid_cell_1</span>=
+<span style="color: #00B050">ptid_cell_2</span>),
+<span style="color: #ED7D31">sex_cell_1</span>,””)</li>
+</ol>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="data-request-sop.html"><span class="header-section-number">2</span> Data Request SOP</a></div>
+<div class="empty"></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#excel-features-sop"><span class="header-section-number">3</span> Excel Features SOP</a></li>
+<li><a class="nav-link" href="#find"><span class="header-section-number">3.1</span> Find</a></li>
+<li><a class="nav-link" href="#find-replace"><span class="header-section-number">3.2</span> Find &amp; Replace</a></li>
+<li><a class="nav-link" href="#filter-data"><span class="header-section-number">3.3</span> Filter Data</a></li>
+<li><a class="nav-link" href="#sort-data"><span class="header-section-number">3.4</span> Sort Data</a></li>
+<li><a class="nav-link" href="#fill-empty-data"><span class="header-section-number">3.5</span> Fill Empty Data</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/nlreiser/Mes-center-dm//blob/main/02-excel-features-sop.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/nlreiser/Mes-center-dm//edit/main/02-excel-features-sop.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Mesulam Center Data Management Practices</strong>" was written by Nina Reiser. It was last built on 2023-05-15.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
