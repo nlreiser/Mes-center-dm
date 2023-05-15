@@ -10,7 +10,7 @@ knitr::include_graphics("new_dr_record.png")
 ```
 
 ## Fill out the Data Request Form
-[Data_Request_Form.mov.zip](https://github.com/nlreiser/Mes-center-dm/files/11482388/Data_Request_Form.mov.zip)
+
 1. Select the Data Request Instrument button under the Data Collection Instruments. 
 2. Fill out the ‘Request Information’ and ‘Requestor Information’ Sections.
     a. Enter the Date of request, Requestor name, and Requestor email. This can be the person filling out the form or the person who requested the data. 
