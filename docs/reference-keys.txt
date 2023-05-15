@@ -1,4 +1,6 @@
-down-the-rabbit-hole
+introduction
+how-to-use-the-site
+navigating-pages
 data-request-sop
 creating-a-new-data-request
 fill-out-the-data-request-form
@@ -6,5 +8,3 @@ fill-out-the-status-instrument
 completing-the-data-request
 creating-the-data-dictionary
 documenting-the-data-request
-the-pool-of-tears
-a-caucus-race-and-a-long-tale

@@ -3,7 +3,34 @@ title: "Mesulam Center Data Management Practices"
 author: "Nina Reiser"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+link-citations: yes
 ---
 
 
-# Down the rabbit-hole
+# Introduction
+
+This website serves as a repository for all data management SOPs that are used
+within the Northwestern University Mesulam Center for Cognitive Neurology &
+Alzheimer's Disease. 
+
+## How to Use the Site
+Navigate the SOPs in the Table of contents on the left panel. Navigate chapters
+within an SOP on the right panel. Search for a specific SOP by using the search 
+bar located above the Table of contents on the left panel. 
+
+### Navigating Pages
+Navigate to the next SOP by clicking on the next page button at the bottom of 
+the text. 
+
+```{r, echo=FALSE, fig.cap="", out.width = '20%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("next_page_button.png")
+```
+
+Navigate to the previous SOP by clicking on the previous page button at the 
+bottom of the text. 
+
+```{r, echo=FALSE, fig.cap="", out.width = '20%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("previous_page_button.png")
+```
+
+

@@ -72,7 +72,7 @@ knitr::include_graphics(c("share_file.png","share_people_specify.png","share_exi
 Note: The Data Dictionary will store all variables for the specific Data Request with information about each. This step should be completed for both internal data requests and collaborative application data requests to inform the receiver of the data on each of the variables. 
 
 1. For each database used for the Data Request, navigate to the corresponding ‘Dictionary’ page which can be found on the left panel of REDCap.
-```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+```{r, echo=FALSE, fig.cap="", out.width = '60%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
 knitr::include_graphics("data_dict_button.png")
 ```
 2. Once on the Data Dictionary page, select ‘Download the current Data Dictionary’. A .csv file of all variables in the database will be downloaded. Open the downloaded file.  
