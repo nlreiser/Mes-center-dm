@@ -46,6 +46,7 @@
 <li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
 <li><a class="active" href="data-request-sop.html"><span class="header-section-number">2</span> Data Request SOP</a></li>
 <li><a class="" href="excel-features-sop.html"><span class="header-section-number">3</span> Excel Features SOP</a></li>
+<li><a class="" href="ripple-sop.html"><span class="header-section-number">4</span> Ripple SOP</a></li>
 </ul>
 
         <div class="book-extra">
@@ -77,23 +78,37 @@
 <li>Select the Data Request Instrument button under the Data Collection Instruments.</li>
 <li>Fill out the ‘Request Information’ and ‘Requestor Information’ Sections.
 <ol style="list-style-type: lower-alpha">
-<li>Enter the Date of request, Requestor name, and Requestor email. This can be the person filling out the form or the person who requested the data.</li>
+<li>Enter the Date of request, Requestor name, and Requestor email.</li>
 <li>Enter the names of anyone else involved with or knowledgeable of the request.</li>
-<li>Select the type of Data Request.</li>
+<li>Select the type of Data Request.
+<ol style="list-style-type: lower-roman">
+<li>Collaborative Application – ALWAYS begins at Collaborative Applications and will autofill. NEVER manually selected.</li>
+<li>Internal Data Request – most common and encompasses all data requests within the Mesulam Center that do not require a Collaborative Application</li>
+<li>Database Change/Creation – select when adding or changing fields within an existing database or creating a new database.</li>
+</ol>
+</li>
+<li>Enter all studies and grant numbers that will be associated with this data request in the free text box.</li>
+<li>Indicate if there is potential for a publication.</li>
 </ol>
 </li>
 <li>Fill out the ‘Request Data’ Section.
 <ol style="list-style-type: lower-alpha">
 <li>Write a brief description of the data request. This should be a few sentences about what is needed for the data request and, if known, why it is being requested.</li>
-<li>Enter a short description of the request. This should be a few words and is used to create the file name where all documents for this data request will be stored.
+<li>Enter a short description of the request. This should be a few words and is used to create the file name where all documents for this data request will be stored. Separate words with underscores (Test_Data_Request).
 <img src="file_name_test.png" width="100%" style="background-color: #41444B; padding:2px;"><ol style="list-style-type: lower-roman">
+<li>For Data Management files, it is best to access them through your system’s local OneDrive. If you have not already done so, download the Data Management – Data Requests folder to your local drive by following instructions in the <a href="https://nuwildcat.sharepoint.com/:w:/r/sites/FSM-MesulamCenterDataMgmt/Shared%20Documents/Data%20Organization%20and%20Planning/SharePoint%20Procedures%20and%20Best%20Practices.docx?d=w819d1c213c3d4765971e49644a6914fa&amp;csf=1&amp;web=1&amp;e=Itzs7L">‘SharePoint SOP’</a>.</li>
 <li>Create a new folder in the Data Requests Sharepoint. Copy and paste the calculated ‘File name’ to name the new folder. This is where all files for this data request will be stored.</li>
+</ol>
+</li>
+<li>Select the type(s) of data needed for the request.
+<ol style="list-style-type: lower-roman">
+<li>For each type of data requested, fill out the additional fields.</li>
 </ol>
 </li>
 <li>Select the UDS version(s) needed.
 <ol style="list-style-type: lower-roman">
-<li>For current REDCap data, select UDS3.</li>
-<li>For historical data in StudyTracker, select MDS/UDS1/UDS2.</li>
+<li>For current ADRC REDCap data, select UDS3.</li>
+<li>For historical ADRC data in StudyTracker, select MDS/UDS1/UDS2.</li>
 </ol>
 </li>
 <li>Select the location(s) of the raw data for the request.</li>
@@ -101,12 +116,49 @@
 </li>
 <li>Fill out the ‘Request Tagging’ Section.
 <ol style="list-style-type: lower-alpha">
-<li>Select an ‘Impact/Need’ score on the slider scale.</li>
-<li>Select if there is any concern about the completion of the project.</li>
-<li>Select the ‘Scope’ of the project.</li>
-<li>Select the approximate total time ‘Duration’ to finish the project.</li>
+<li>Select an ‘Impact/Need’ score on the slider scale.
+<ol style="list-style-type: lower-roman">
+<li>Low Impact/Need – projects that are not of immediate concern and have low impact on future research and analyses; there may be no deadline for completion.</li>
+<li>Medium Impact/Need – projects that need to be completed, but not as urgently as Maximum Impact/Need; may have a longer deadline before completion is due.<br>
+</li>
+<li>Maximum Impact/Need – project completion is essential for future research/analyses; may have a strict deadline for completion.</li>
+</ol>
+</li>
+<li>Select if there is any concern about the completion of the project.
+<ol style="list-style-type: lower-roman">
+<li>If there is a real concern that the completion of the project may not be possible, it will be assigned a lower priority. Time spent should be prioritized to projects that can be completed.</li>
+</ol>
+</li>
+<li>Select the ‘Scope’ of the project.
+<ol style="list-style-type: lower-roman">
+<li>Low Scope – little to no changes to procedures/methods/protocols; implementation can occur immediately or with little to no discussion.</li>
+<li>Medium Scope – slight changes to procedures/methods/protocols; discussion with other teams may be necessary before implementation can occur.</li>
+<li>Maximum Scope – major changes to procedures/methods/protocols; may require training or coordination with other departments before implementation can occur.</li>
+</ol>
+</li>
+<li>Select the approximate total time ‘Duration’ in hours that will be spent working on this project.</li>
 <li>The above fields will return a priority score, which can be used to prioritize all in-progress projects.</li>
-<li>Select the reason(s) for the scope choice.</li>
+<li>Select the reason(s) for the scope choice.
+<ol style="list-style-type: lower-roman">
+<li>Excel project</li>
+<li>Single Database Project</li>
+<li>Multiple Database Project</li>
+<li>Simple Criteria</li>
+<li>Complex Criteria</li>
+<li>Historic Data (pre-2015)</li>
+<li>New Methodology Needed – (developing new system/analysis/protocol)</li>
+<li>Collaboration Needed – multiple departments or collaborative application</li>
+<li>Documentation (SOP)</li>
+<li>Report/Visualization</li>
+<li>Data Pull</li>
+<li>Data Check</li>
+<li>Data Import</li>
+<li>Database Harmonization</li>
+<li>Database Creation</li>
+<li>Database Modification</li>
+<li>Referral Pull - (pulling demographic information/names to send to collaborator to use the referrals as participants – REQUIRES COLLABORATIVE APPLICATION)</li>
+</ol>
+</li>
 </ol>
 </li>
 <li>Fill out the ‘Storage Locations’ Section – this can be done immediately or when the data request is complete.
@@ -123,17 +175,18 @@
 </li>
 <li>Paste the link to the Collaborators folder.
 <ol style="list-style-type: lower-roman">
-<li>Follow steps 8a-i. through 8a-iv for the Collaborator folder.</li>
+<li>Follow steps 5a-i. through 5a-iv for the Collaborator folder.</li>
 </ol>
 </li>
 <li>Paste the link to the Collaborators data file.
 <ol style="list-style-type: lower-roman">
-<li>Follow steps 8a-i. through 8a-iv for the Collaborator file.</li>
+<li>Follow steps 5a-i. through 5a-iv for the Collaborator file.</li>
 </ol>
 </li>
 <li>Write up a brief description to document the data request OR Paste the link to the Documentation file in the Documentation box.
 <ol style="list-style-type: lower-roman">
-<li>If Pasting a link, follow steps 8a-i. through 8a-iv.</li>
+<li>For additional information, see 2.6 Documenting the Data.</li>
+<li>If Pasting a link, follow steps 5a-i. through 5a-iv.</li>
 </ol>
 </li>
 </ol>
@@ -182,8 +235,20 @@
 <li>Once on the Data Dictionary page, select ‘Download the current Data Dictionary’. A .csv file of all variables in the database will be downloaded. Open the downloaded file.<br>
 </li>
 <li>Filter the Data Dictionary and delete any unneeded variables for the data request.</li>
-<li>Save the final Data Dictionary, which now consists of only the variables that were required for the Data Request, in the Data Request folder or the Collaborator folder (if for a Collaborative Application).</li>
-<li>If more than one database was used for the Data Request, repeat steps 1 – 4 for each database. Compile all variables from the multiple databases into a single .csv or .xlsx file.</li>
+<li>Save the Data Dictionary in the Data Request folder, which should now consist of only the variables from a single database that were required for the Data Request.</li>
+<li>Compile all necessary variables from the database into a single .csv or .xlsx file by following the <a href="https://nuwildcat.sharepoint.com/:x:/r/sites/FSM-MesulamCenterDataMgmt/Shared%20Documents/Data%20Requests/2023-04-14_REDCap_Reports_SOP/Data_Dictionary_Template.xlsx?d=w1c9abe17e62340c19618191f3e9ff3dd&amp;csf=1&amp;web=1&amp;e=EDyHIh">‘Data Dictionary Template’</a>.
+<ol style="list-style-type: lower-alpha">
+<li>The headings should ALWAYS appear in this order with the Column Headers on line 13 and the first variable on line 14.
+<img src="dd_template.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</li>
+<li>If more than one database was used for the Data Request, repeat steps 1 – 4 for each database, adding each set of new variables to the same Data Dictionary.
+<ol style="list-style-type: lower-alpha">
+<li>When using multiple databases for a data request, create new ‘Variable Name’ columns, specifying which database the variable came from if they are not stored in all databases used.</li>
+</ol>
+</li>
+<li>Save the Data Dictionary file with the following format: <i>Date_Data_Request_Name</i>_Metadata. Ex: 2023_05_23_Data_Request_SOP_Metadata.</li>
 </ol>
 </div>
 <div id="documenting-the-data-request" class="section level2" number="2.6">
@@ -198,7 +263,26 @@
 </ul>
 <p><b>A.</b> If the documentation only consists of a few sentences or a few short paragraphs, it can be entered directly into the Data Request Form Documentation textbox.</p>
 <p><b>B.</b> If the documentation requires a longer explanation, create a word document and paste the link to the documentation into the Data Request Form Documentation textbox.</p>
-
+</div>
+<div id="sending-data-out" class="section level2" number="2.7">
+<h2>
+<span class="header-section-number">2.7</span> Sending Data Out<a class="anchor" aria-label="anchor" href="#sending-data-out"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Create a new folder within the specific Data Request folder in SharePoint with the following format: <i>Date_MesCtr_Data_Request_Name_</i>Dataset. Ex: 2023_05_23_Data_Request_SOP_Dataset.</li>
+<li>Move the finalized data dictionary to this folder.<br>
+</li>
+<li>Add the data to this folder with the following format: <i>Date_Data_Request_Name_</i>Data. Ex: 2023_05_23_Data_Request_SOP_Data.
+<ol style="list-style-type: lower-alpha">
+<li>Note: the data should be stored within a .csv or .xlsx file, or both.</li>
+</ol>
+</li>
+<li>Within this folder, add another folder for all Documentation. Title this folder ‘Documentation’.
+<ol style="list-style-type: lower-alpha">
+<li>This is where the Documentation, scoring guidelines, and any other manuals for the data request will be stored.</li>
+</ol>
+</li>
+</ol>
 </div>
 </div>
   <div class="chapter-nav">
@@ -214,6 +298,7 @@
 <li><a class="nav-link" href="#completing-the-data-request"><span class="header-section-number">2.4</span> Completing the Data Request</a></li>
 <li><a class="nav-link" href="#creating-the-data-dictionary"><span class="header-section-number">2.5</span> Creating the Data Dictionary</a></li>
 <li><a class="nav-link" href="#documenting-the-data-request"><span class="header-section-number">2.6</span> Documenting the Data Request</a></li>
+<li><a class="nav-link" href="#sending-data-out"><span class="header-section-number">2.7</span> Sending Data Out</a></li>
 </ul>
 
       <div class="book-extra">
@@ -231,7 +316,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Mesulam Center Data Management Practices</strong>" was written by Nina Reiser. It was last built on 2023-05-15.</p>
+    <p>"<strong>Mesulam Center Data Management Practices</strong>" was written by Nina Reiser. It was last built on 2023-05-24.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

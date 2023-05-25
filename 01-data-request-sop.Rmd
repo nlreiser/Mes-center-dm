@@ -13,27 +13,59 @@ knitr::include_graphics("new_dr_record.png")
 
 1. Select the Data Request Instrument button under the Data Collection Instruments. 
 2. Fill out the ‘Request Information’ and ‘Requestor Information’ Sections.
-    a. Enter the Date of request, Requestor name, and Requestor email. This can be the person filling out the form or the person who requested the data. 
+    a. Enter the Date of request, Requestor name, and Requestor email. 
     b. Enter the names of anyone else involved with or knowledgeable of the request.
     c. Select the type of Data Request.
+        i. Collaborative Application – ALWAYS begins at Collaborative Applications and will   autofill. NEVER manually selected.
+        ii.	Internal Data Request – most common and encompasses all data requests within the Mesulam Center that do not require a Collaborative Application
+        iii.	Database Change/Creation – select when adding or changing fields within an existing database or creating a new database.
+    d. Enter all studies and grant numbers that will be associated with this data request in the free text box.
+    e. Indicate if there is potential for a publication. 
 3. Fill out the ‘Request Data’ Section. 
     a. Write a brief description of the data request. This should be a few sentences about what is needed for the data request and, if known, why it is being requested.
-    b. Enter a short description of the request. This should be a few words and is used to create the file name where all documents for this data request will be stored. 
+    b. Enter a short description of the request. This should be a few words and is used to create the file name where all documents for this data request will be stored. Separate words with underscores (Test_Data_Request). 
 ```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
 knitr::include_graphics("file_name_test.png")
 ```
-        i. Create a new folder in the Data Requests Sharepoint. Copy and paste the calculated ‘File name’ to name the new folder. This is where all files for this data request will be stored. 
-    c. Select the UDS version(s) needed. 
-        i. For current REDCap data, select UDS3. 
-        ii. For historical data in StudyTracker, select MDS/UDS1/UDS2.
-    d. Select the location(s) of the raw data for the request.
+        i. For Data Management files, it is best to access them through your system’s local OneDrive. If you have not already done so, download the Data Management – Data Requests folder to your local drive by following instructions in the ['SharePoint SOP'](https://nuwildcat.sharepoint.com/:w:/r/sites/FSM-MesulamCenterDataMgmt/Shared Documents/Data Organization and Planning/SharePoint Procedures and Best Practices.docx?d=w819d1c213c3d4765971e49644a6914fa&csf=1&web=1&e=Itzs7L).
+        ii. Create a new folder in the Data Requests Sharepoint. Copy and paste the calculated ‘File name’ to name the new folder. This is where all files for this data request will be stored. 
+    c. Select the type(s) of data needed for the request.
+        i. For each type of data requested, fill out the additional fields. 
+    d. Select the UDS version(s) needed. 
+        i. For current ADRC REDCap data, select UDS3. 
+        ii. For historical ADRC data in StudyTracker, select MDS/UDS1/UDS2.
+    e. Select the location(s) of the raw data for the request.
 4. Fill out the ‘Request Tagging’ Section. 
     a. Select an ‘Impact/Need’ score on the slider scale. 
+        i. Low Impact/Need – projects that are not of immediate concern and have low impact on future research and analyses; there may be no deadline for completion.
+        ii. Medium Impact/Need – projects that need to be completed, but not as urgently as Maximum Impact/Need; may have a longer deadline before completion is due.  
+        iii. Maximum Impact/Need – project completion is essential for future research/analyses; may have a strict deadline for completion. 
     b. Select if there is any concern about the completion of the project.
+        i. If there is a real concern that the completion of the project may not be possible, it will be assigned a lower priority. Time spent should be prioritized to projects that can be completed. 
     c. Select the ‘Scope’ of the project. 
-    d. Select the approximate total time ‘Duration’ to finish the project. 
+        i. Low Scope – little to no changes to procedures/methods/protocols; implementation can occur immediately or with little to no discussion. 
+        ii. Medium Scope – slight changes to procedures/methods/protocols; discussion with other teams may be necessary before implementation can occur.
+        iii. Maximum Scope – major changes to procedures/methods/protocols; may require training or coordination with other departments before implementation can occur. 
+    d. Select the approximate total time ‘Duration’ in hours that will be spent working on this project. 
     e. The above fields will return a priority score, which can be used to prioritize all in-progress projects. 
     f. Select the reason(s) for the scope choice.
+        i. Excel project
+        ii. Single Database Project
+        iii. Multiple Database Project
+        iv. Simple Criteria
+        v. Complex Criteria
+        vi. Historic Data (pre-2015)
+        vii. New Methodology Needed – (developing new system/analysis/protocol)
+        viii. Collaboration Needed – multiple departments or collaborative application 
+        ix. Documentation (SOP)
+        x. Report/Visualization
+        xi. Data Pull
+        xii. Data Check
+        xiii. Data Import
+        xiv. Database Harmonization
+        xv. Database Creation
+        xvi. Database Modification
+        xvii. Referral Pull - (pulling demographic information/names to send to collaborator to use the referrals as participants – REQUIRES COLLABORATIVE APPLICATION)
 5. Fill out the ‘Storage Locations’ Section – this can be done immediately or when the data request is complete. 
     a. Paste the link to the Data Request folder. 
         i. In Sharepoint, left click on the folder of the data request. Select ‘Share’. A window will pop up with options to send the link to the folder.  
@@ -44,11 +76,12 @@ knitr::include_graphics(c("share_file.png","share_people_specify.png","share_exi
         iii. Select ‘People with existing access’. Click Apply. 
         iv.	Copy the link and paste into the corresponding box.  
     b. Paste the link to the Collaborators folder.
-        i. Follow steps 8a-i. through 8a-iv for the Collaborator folder.
+        i. Follow steps 5a-i. through 5a-iv for the Collaborator folder.
     c. Paste the link to the Collaborators data file.
-        i. Follow steps 8a-i. through 8a-iv for the Collaborator file.
+        i. Follow steps 5a-i. through 5a-iv for the Collaborator file.
     d. Write up a brief description to document the data request OR Paste the link to the Documentation file in the Documentation box. 
-        i. If Pasting a link, follow steps 8a-i. through 8a-iv.
+        i. For additional information, see 2.6 Documenting the Data.
+        ii. If Pasting a link, follow steps 5a-i. through 5a-iv.
 6. Always mark the Form Status ‘Complete’. Save and Exit Form.
 
 ## Fill out the Status Instrument 
@@ -78,8 +111,15 @@ knitr::include_graphics("data_dict_button.png")
 ```
 2. Once on the Data Dictionary page, select ‘Download the current Data Dictionary’. A .csv file of all variables in the database will be downloaded. Open the downloaded file.  
 3. Filter the Data Dictionary and delete any unneeded variables for the data request. 
-4. Save the final Data Dictionary, which now consists of only the variables that were required for the Data Request, in the Data Request folder or the Collaborator folder (if for a Collaborative Application). 
-5. If more than one database was used for the Data Request, repeat steps 1 – 4 for each database. Compile all variables from the multiple databases into a single .csv or .xlsx file. 
+4. Save the Data Dictionary in the Data Request folder, which should now consist of only the variables from a single database that were required for the Data Request. 
+5. Compile all necessary variables from the database into a single .csv or .xlsx file by following the ['Data Dictionary Template'](https://nuwildcat.sharepoint.com/:x:/r/sites/FSM-MesulamCenterDataMgmt/Shared%20Documents/Data%20Requests/2023-04-14_REDCap_Reports_SOP/Data_Dictionary_Template.xlsx?d=w1c9abe17e62340c19618191f3e9ff3dd&csf=1&web=1&e=EDyHIh).
+    a. The headings should ALWAYS appear in this order with the Column Headers on line 13 and the first variable on line 14. 
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("dd_template.png")
+```
+6. If more than one database was used for the Data Request, repeat steps 1 – 4 for each database, adding each set of new variables to the same Data Dictionary. 
+    a. When using multiple databases for a data request, create new ‘Variable Name’ columns, specifying which database the variable came from if they are not stored in all databases used. 
+7. Save the Data Dictionary file with the following format: <i>Date_Data_Request_Name</i>_Metadata. Ex: 2023_05_23_Data_Request_SOP_Metadata.
 
 
 ## Documenting the Data Request
@@ -94,6 +134,14 @@ The purpose of the data documentation for a Data Request is to explain everythin
 <b>B.</b> If the documentation requires a longer explanation, create a word document and paste the link to the documentation into the Data Request Form Documentation textbox. 
 
 
+## Sending Data Out
+
+1. Create a new folder within the specific Data Request folder in SharePoint with the following format: <i>Date_MesCtr_Data_Request_Name_</i>Dataset. Ex: 2023_05_23_Data_Request_SOP_Dataset.
+2. Move the finalized data dictionary to this folder.  
+3. Add the data to this folder with the following format: <i>Date_Data_Request_Name_</i>Data. Ex: 2023_05_23_Data_Request_SOP_Data.
+    a. Note: the data should be stored within a .csv or .xlsx file, or both. 
+4. Within this folder, add another folder for all Documentation. Title this folder ‘Documentation’. 
+    a. This is where the Documentation, scoring guidelines, and any other manuals for the data request will be stored. 
 
 
 
