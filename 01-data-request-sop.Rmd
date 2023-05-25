@@ -84,7 +84,9 @@ knitr::include_graphics(c("share_file.png","share_people_specify.png","share_exi
         ii. If Pasting a link, follow steps 5a-i. through 5a-iv.
 6. Always mark the Form Status ‘Complete’. Save and Exit Form.
 
+
 ## Fill out the Status Instrument 
+
 7. Select the Status Instrument button under the Data Collection Instruments. 
 8. After creating a data request, select the appropriate status. 
 9. Enter the Percent Complete.
