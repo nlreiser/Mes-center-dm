@@ -17,6 +17,8 @@ filter-data
 fill-empty-data
 delete-empty-rows
 vlookup
+example-1
+example-2
 ripple-sop
 ripple-general-sop
 registry

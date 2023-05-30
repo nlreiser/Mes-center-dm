@@ -236,7 +236,10 @@ list of participant id’s and visit dates and test scores (az_test).
 knitr::include_graphics("az_demo_test_sheets.png")
 ```
 
-<b>Example 1:</b> Lookup participant id from az_test and add ‘sex’ from the az_demo spreadsheet to the az_test spreadsheet.  
+<br/>
+
+### <b>Example 1:</b> 
+<b>Lookup participant id from az_test and add ‘sex’ from the az_demo spreadsheet to the az_test spreadsheet.</>  
 
 1. Identify the cell where you want to perform VLOOKUP.
     a. I want to add ‘sex’ to column N in the az_test spreadsheet
@@ -283,7 +286,11 @@ knitr::include_graphics("vlookup_1.6_excel.png")
 knitr::include_graphics("vlookup_1.7_excel.png")
 ```
 
-<b>Example 2:</b> Lookup participant id from az_demo and determine the earliest visit date for each participant from az_test data. 
+<br/>
+
+### <b>Example 2:</b> 
+<b>Lookup participant id from az_demo and determine the earliest visit date for each participant from az_test data. <b/>
+
 1. Identify the cell where you want to perform VLOOKUP.
     a. I want to add ‘first_visit_date’ to column I in the az_demo spreadsheet
     b. My first cell in column I with a participant id is I2

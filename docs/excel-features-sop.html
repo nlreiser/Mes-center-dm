@@ -303,7 +303,12 @@ FALSE if you want to locate an exact match to your lookup_value</li>
 of participant ids and demographic information (az_demo); the other contains a
 list of participant id’s and visit dates and test scores (az_test).</p>
 <div class="inline-figure"><img src="az_demo_test_sheets.png" width="100%" style="background-color: #41444B; padding:2px;"></div>
-<p><b>Example 1:</b> Lookup participant id from az_test and add ‘sex’ from the az_demo spreadsheet to the az_test spreadsheet.</p>
+<p><br></p>
+<div id="example-1" class="section level3" number="3.7.1">
+<h3>
+<span class="header-section-number">3.7.1</span> <b>Example 1:</b><a class="anchor" aria-label="anchor" href="#example-1"><i class="fas fa-link"></i></a>
+</h3>
+<p><b>Lookup participant id from az_test and add ‘sex’ from the az_demo spreadsheet to the az_test spreadsheet.&lt;/&gt;</b></p>
 <ol style="list-style-type: decimal">
 <li>Identify the cell where you want to perform VLOOKUP.
 <ol style="list-style-type: lower-alpha">
@@ -364,41 +369,81 @@ list of participant id’s and visit dates and test scores (az_test).</p>
 <img src="vlookup_1.7_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
 </li>
 </ol>
-<p><b>Example 2:</b> Lookup participant id from az_demo and determine the earliest visit date for each participant from az_test data.
-1. Identify the cell where you want to perform VLOOKUP.
-a. I want to add ‘first_visit_date’ to column I in the az_demo spreadsheet
-b. My first cell in column I with a participant id is I2
-c. Optional: add a column name
-2. Enter the following to begin the formula in the cell: =VLOOKUP(
+<p><br></p>
+</div>
+<div id="example-2" class="section level3" number="3.7.2">
+<h3>
+<span class="header-section-number">3.7.2</span> <b>Example 2:</b><a class="anchor" aria-label="anchor" href="#example-2"><i class="fas fa-link"></i></a>
+</h3>
+<p><b>Lookup participant id from az_demo and determine the earliest visit date for each participant from az_test data. <b></b></b></p>
+<ol style="list-style-type: decimal">
+<li>Identify the cell where you want to perform VLOOKUP.
+<ol style="list-style-type: lower-alpha">
+<li>I want to add ‘first_visit_date’ to column I in the az_demo spreadsheet</li>
+<li>My first cell in column I with a participant id is I2</li>
+<li>Optional: add a column name</li>
+</ol>
+</li>
+<li>Enter the following to begin the formula in the cell: =VLOOKUP(
 <img src="vlookup_2.1_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
-3. Select the lookup_value and add a comma.
-a. My first lookup_value is id 1001 from the az_demo spreadsheet, so I select cell A2 and add a comma to tell the formula I am ready to proceed.
+</li>
+<li>Select the lookup_value and add a comma.
+<ol style="list-style-type: lower-alpha">
+<li>My first lookup_value is id 1001 from the az_demo spreadsheet, so I select cell A2 and add a comma to tell the formula I am ready to proceed.
 <img src="vlookup_2.2_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
-4. Select the table_array (the range of columns where you want Excel to locate the lookup_value and the desired return value).
-a. My desired return value is ‘visit_date’ from the az_test spreadsheet, which means I want Excel to search for my lookup_value in az_test
-i. Note: moving to another spreadsheet, you will see that the VLOOKUP formula moves to the formula line of that spreadsheet for ease of use.
-b. My range of columns starts with A (id) and ends with B (visit_date) in the az_test spreadsheet, so I select columns A-B.
+</li>
+</ol>
+</li>
+<li>Select the table_array (the range of columns where you want Excel to locate the lookup_value and the desired return value).
+<ol style="list-style-type: lower-alpha">
+<li>My desired return value is ‘visit_date’ from the az_test spreadsheet, which means I want Excel to search for my lookup_value in az_test
+<ol style="list-style-type: lower-roman">
+<li>Note: moving to another spreadsheet, you will see that the VLOOKUP formula moves to the formula line of that spreadsheet for ease of use.</li>
+</ol>
+</li>
+<li>My range of columns starts with A (id) and ends with B (visit_date) in the az_test spreadsheet, so I select columns A-B.
 <img src="vlookup_2.3_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
-c. Add a comma after the columns are selected to tell Excel you are ready to proceed.
-5. Identify the column_index_num of your desired return value within the range of table_array columns.
-a. table_array number always starts at 1, even if the first column of the range selected is not A.
-b. Since I want the first visit date, I preface my column_index_num value with the MIN() function.
-i. Note: Other functions can be used to specify which value to return for each id’s visit dates. MAX() will return the latest visit date. AVG() can be used to average test scores for a participant, etc.
-c. ‘visit_date’ is the 2nd column, so my column_index_num is 2.
-d. Add a comma after the column_index_num to tell Excel you are ready to proceed.
+</li>
+<li>Add a comma after the columns are selected to tell Excel you are ready to proceed.</li>
+</ol>
+</li>
+<li>Identify the column_index_num of your desired return value within the range of table_array columns.
+<ol style="list-style-type: lower-alpha">
+<li>table_array number always starts at 1, even if the first column of the range selected is not A.</li>
+<li>Since I want the first visit date, I preface my column_index_num value with the MIN() function.
+<ol style="list-style-type: lower-roman">
+<li>Note: Other functions can be used to specify which value to return for each id’s visit dates. MAX() will return the latest visit date. AVG() can be used to average test scores for a participant, etc.</li>
+</ol>
+</li>
+<li>‘visit_date’ is the 2nd column, so my column_index_num is 2.</li>
+<li>Add a comma after the column_index_num to tell Excel you are ready to proceed.
 <img src="vlookup_2.4_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
-6. Enter TRUE or FALSE for your [range_lookup]. FALSE will only look for exact matches.
-a. Typically, you will always want an exact match, so your [range_lookup] will be FALSE.
-b. In this case, I want an exact match to id 1001 from my az_test spreadsheet to my az_demo spreadsheet, so I enter FALSE.
-c. Add a close parenthesis to finish the formula.
+</li>
+</ol>
+</li>
+<li>Enter TRUE or FALSE for your [range_lookup]. FALSE will only look for exact matches.
+<ol style="list-style-type: lower-alpha">
+<li>Typically, you will always want an exact match, so your [range_lookup] will be FALSE.</li>
+<li>In this case, I want an exact match to id 1001 from my az_test spreadsheet to my az_demo spreadsheet, so I enter FALSE.</li>
+<li>Add a close parenthesis to finish the formula.
 <img src="vlookup_2.5_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
-7. Press ‘Enter’ and the formula will complete the VLOOKUP.
-a. I now have the desired return value of first_visit_date for id 1001.
+</li>
+</ol>
+</li>
+<li>Press ‘Enter’ and the formula will complete the VLOOKUP.
+<ol style="list-style-type: lower-alpha">
+<li>I now have the desired return value of first_visit_date for id 1001.
 <img src="vlookup_2.6_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
-8. To complete the VLOOKUP for the entire column of id values, drag the green corner to the end of the spreadsheet or double click the small green box when cell N2 is selected.
-<img src="vlookup_2.7_excel.png" width="100%" style="background-color: #41444B; padding:2px;"></p>
+</li>
+</ol>
+</li>
+<li>To complete the VLOOKUP for the entire column of id values, drag the green corner to the end of the spreadsheet or double click the small green box when cell N2 is selected.
+<img src="vlookup_2.7_excel.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
 <p>References: <a href="https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1" class="uri">https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1</a></p>
 
+</div>
 </div>
 </div>
   <div class="chapter-nav">
@@ -414,7 +459,12 @@ a. I now have the desired return value of first_visit_date for id 1001.
 <li><a class="nav-link" href="#filter-data"><span class="header-section-number">3.4</span> Filter Data</a></li>
 <li><a class="nav-link" href="#fill-empty-data"><span class="header-section-number">3.5</span> Fill Empty Data</a></li>
 <li><a class="nav-link" href="#delete-empty-rows"><span class="header-section-number">3.6</span> Delete Empty Rows</a></li>
-<li><a class="nav-link" href="#vlookup"><span class="header-section-number">3.7</span> VLOOKUP</a></li>
+<li>
+<a class="nav-link" href="#vlookup"><span class="header-section-number">3.7</span> VLOOKUP</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#example-1"><span class="header-section-number">3.7.1</span> Example 1:</a></li>
+<li><a class="nav-link" href="#example-2"><span class="header-section-number">3.7.2</span> Example 2:</a></li>
+</ul>
+</li>
 </ul>
 
       <div class="book-extra">
