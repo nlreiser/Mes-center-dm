@@ -239,7 +239,7 @@ knitr::include_graphics("az_demo_test_sheets.png")
 <br/>
 
 ### <b>Example 1:</b> 
-<b>Lookup participant id from az_test and add ‘sex’ from the az_demo spreadsheet to the az_test spreadsheet.</>  
+<b>Lookup participant id from az_test and add ‘sex’ from the az_demo spreadsheet to the az_test spreadsheet.<b/>  
 
 1. Identify the cell where you want to perform VLOOKUP.
     a. I want to add ‘sex’ to column N in the az_test spreadsheet
