@@ -1,9 +1,7 @@
 # Excel Features SOP 
 
 This document functions as an instruction manual for Excel features commonly 
-used after a REDCap Report is downloaded. All examples were created using the 
-az_demo and az_test datasets from the Candidate Data Challenge, which contain 
-computer-generated sample data. 
+used after a REDCap Report is downloaded. All examples were created using the az_demo and az_test datasets, which contain computer-generated sample data via the <i>randomNames</i> R package.  
 
 <b>Note:</b> <i>An important step to conserve the order of the original data is to add an 
 index column. Left click the first column. Select ‘Insert’ from the dropdown. 
@@ -48,16 +46,49 @@ knitr::include_graphics("replace_button_excel.png")
 
 3. Enter the search keywords into the ‘Find what’ search bar. 
 4. Enter the replacement into the ‘Replace with’ search bar. 
-    Ex: Replace a PTID with leading zeros. 
+    Ex: Replace a diagnosis acronym with the full name.
 ```{r, echo=FALSE, fig.cap="", out.width = '90%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
 knitr::include_graphics("find_and_replace_excel.png")
 ```
 5. Click ‘Replace’ for a single cell replacement or ‘Replace All’ to replace all selected data. 
 
 
+## Sort Data
+1.	To Sort or Filter data, begin by selecting the columns or rows you wish to 
+filter. To add filters to all columns, click the downward triangle icon 
+```{r, echo=FALSE, fig.cap="", out.width = '5%', out.extra='style="background-color: #FFFFFF; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("select_all_excel.png")
+```
+in the upper lefthand corner of the spreadsheet. This selects all data in the spreadsheet. 
+2. Navigate to the Editing dropdown on the Home tab in Excel. 
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("sort_options_excel.png")
+```
+3.	Click ‘Sort & Filter’ for a dropdown and select one of the three sort options:
+    a. ‘Sort A to Z’ sorts alphabetically or numerically in ascending order. 
+    b. ‘Sort Z to A’ sorts alphabetically or numerically in descending order. 
+    c. ‘Custom Sort…’ opens a window for further sorting criteria.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("custom_sort_excel.png")
+```
+
+Ex: Sort all data first by date of birth, then by race. Select the column ‘dob’ 
+and order ‘Oldest to Newest’. Then select the ‘+’ to add another sort criteria. 
+Select the column ‘race’ and order ‘A to Z’. 
+
+```{r, echo=FALSE, fig.cap="", out.width = '70%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("sort_order_excel.png")
+```
+
+4. Enter all sorting criteria, then select ‘OK’. The selected data will now be sorted using your desired order. 
+5. To revert to original order, sort by the index column in ascending order.
+
+
 ## Filter Data
-<i>Filters can be used to obtain desired data or remove unwanted data. To remove 
-unwanted data from a spreadsheet, filter the data to obtain what is NOT wanted, 
+<i>Filters can be used to obtain desired data or remove unwanted data. With the 
+filter tool, the user can specify column criteria they would like to be met and 
+view only those rows. To remove unwanted data from a spreadsheet, filter the data 
+to obtain what is NOT wanted, 
 then delete those rows. When the ‘Clear’ filter is applied, the undesired rows 
 will be removed from the spreadsheet. A filter will not remove the rows from the 
 spreadsheet until the user manually deletes the rows.</i>
@@ -93,37 +124,6 @@ knitr::include_graphics("filter_options_excel.png")
     rows will be left in the spreadsheet. 
 6. To clear a filter and view all rows of data, repeat steps 2 and 3 but select 
 the ‘Clear’ option instead. All data that was not manually deleted will remain. 
-
-
-## Sort Data
-1.	To Sort or Filter data, begin by selecting the columns or rows you wish to 
-filter. To add filters to all columns, click the downward triangle icon 
-```{r, echo=FALSE, fig.cap="", out.width = '5%', out.extra='style="background-color: #FFFFFF; padding:2px;"', fig.align = 'center'}
-knitr::include_graphics("select_all_excel.png")
-```
-in the upper lefthand corner of the spreadsheet. This selects all data in the spreadsheet. 
-2. Navigate to the Editing dropdown on the Home tab in Excel. 
-```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
-knitr::include_graphics("sort_options_excel.png")
-```
-3.	Click ‘Sort & Filter’ for a dropdown and select one of the three sort options:
-    a. ‘Sort A to Z’ sorts alphabetically or numerically in ascending order. 
-    b. ‘Sort Z to A’ sorts alphabetically or numerically in descending order. 
-    c. ‘Custom Sort…’ opens a window for further sorting criteria.
-```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
-knitr::include_graphics("custom_sort_excel.png")
-```
-
-Ex: Sort all data first by date of birth, then by race. Select the column ‘dob’ 
-and order ‘Oldest to Newest’. Then select the ‘+’ to add another sort criteria. 
-Select the column ‘race’ and order ‘A to Z’. 
-
-```{r, echo=FALSE, fig.cap="", out.width = '70%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
-knitr::include_graphics("sort_order_excel.png")
-```
-
-4. Enter all sorting criteria, then select ‘OK’. The selected data will now be sorted using your desired order. 
-5. To revert to original order, sort by the index column in ascending order.
 
 
 ## Fill Empty Data
@@ -209,6 +209,139 @@ knitr::include_graphics("delete_blank_rows_excel.png")
 ```
     b. Select all the rows with 0 values. Left click and select ‘Delete Row’. 
 5. Clear the filter. All empty rows will now be gone from the spreadsheet. 
+
+
+## VLOOKUP
+<i>VLOOKUP uses a lookup value to find certain matches within the same spreadsheet 
+or in another spreadsheet and return a user-specified value based on the match. 
+The function takes the form:</i>
+
+=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+
+1. Before you begin using the formula, determine what you are looking for and what 
+you will want returned. There are four items you need to fill in for the formula to work:
+    a. lookup_value:  the value you are searching for (a single cell)
+    b. table_array: the range of the search (typically a column or multiple columns)
+    c. col_index_num: the column of the desired return value within the table_array range
+    d. range_lookup: TRUE if you want to locate an approximate match to your lookup_value; 
+    FALSE if you want to locate an exact match to your lookup_value
+2. Use the above formula within the first cell where you want the returned value to be entered. 
+3. Drag the formula down to perform the VLOOKUP on all cells in a specific column. 
+
+The following examples will use two separate spreadsheets: one contains a list 
+of participant ids and demographic information (az_demo); the other contains a 
+list of participant id’s and visit dates and test scores (az_test). 
+
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("az_demo_test_sheets.png")
+```
+
+<b>Example 1:</b> Lookup participant id from az_test and add ‘sex’ from the az_demo spreadsheet to the az_test spreadsheet.  
+
+1. Identify the cell where you want to perform VLOOKUP.
+    a. I want to add ‘sex’ to column N in the az_test spreadsheet
+    b. My first cell in column N with a participant id is N2
+    c. Optional: add a column name
+2. Enter the following to begin the formula in the cell: =VLOOKUP(
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_1.1_excel.png")
+```
+3. Select the lookup_value and add a comma.
+    a. My first lookup_value is id 1001 from the az_test spreadsheet, so I select cell A2 and add a comma to tell the formula I am ready to proceed.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_1.2_excel.png")
+```
+4. Select the table_array (the range of columns where you want Excel to locate the lookup_value and the desired return value).
+    a. My desired return value is ‘sex’ from the az_demo spreadsheet, which means I want Excel to search for my lookup_value in az_demo. 
+        i. Note: moving to another spreadsheet, you will see that the VLOOKUP formula moves to the formula line of that spreadsheet for ease of use.
+    b. My range of columns starts with A (id) and ends with E (sex) in the az_demo spreadsheet, so I select columns A-E.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_1.3_excel.png")
+```
+    c. Add a comma after the columns are selected to tell Excel you are ready to proceed.
+5. Identify the column_index_num of your desired return value within the range of table_array columns. 
+    a. table_array number always starts at 1, even if the first column of the range selected is not A.
+    b. ‘sex’ is the 5th column, so my column_index_num is 5.
+    c. Add a comma after the column_index_num to tell Excel you are ready to proceed.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_1.4_excel.png")
+```
+6. Enter TRUE or FALSE for your [range_lookup]. FALSE will only look for exact matches. 
+    a. Typically, you will always want an exact match, so your [range_lookup] will be FALSE.
+    b. In this case, I want an exact match to id 1001 from my az_test spreadsheet to my az_demo spreadsheet, so I enter FALSE.
+    c. Add a close parenthesis to finish the formula.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_1.5_excel.png")
+```
+7. Press ‘Enter’ and the formula will complete the VLOOKUP.
+    a. I now have the desired return value of sex for id 1001.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_1.6_excel.png")
+```
+8. To complete the VLOOKUP for the entire column of id values, drag the green corner to the end of the spreadsheet or double click the small green box when cell N2 is selected, which will automatically drag the formula down.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_1.7_excel.png")
+```
+
+<b>Example 2:</b> Lookup participant id from az_demo and determine the earliest visit date for each participant from az_test data. 
+1. Identify the cell where you want to perform VLOOKUP.
+    a. I want to add ‘first_visit_date’ to column I in the az_demo spreadsheet
+    b. My first cell in column I with a participant id is I2
+    c. Optional: add a column name
+2. Enter the following to begin the formula in the cell: =VLOOKUP(
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_2.1_excel.png")
+```
+3. Select the lookup_value and add a comma.
+    a. My first lookup_value is id 1001 from the az_demo spreadsheet, so I select cell A2 and add a comma to tell the formula I am ready to proceed.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_2.2_excel.png")
+```
+4. Select the table_array (the range of columns where you want Excel to locate the lookup_value and the desired return value).
+    a. My desired return value is ‘visit_date’ from the az_test spreadsheet, which means I want Excel to search for my lookup_value in az_test 
+        i. Note: moving to another spreadsheet, you will see that the VLOOKUP formula moves to the formula line of that spreadsheet for ease of use.
+    b. My range of columns starts with A (id) and ends with B (visit_date) in the az_test spreadsheet, so I select columns A-B.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_2.3_excel.png")
+```
+    c. Add a comma after the columns are selected to tell Excel you are ready to proceed.
+5. Identify the column_index_num of your desired return value within the range of table_array columns. 
+    a. table_array number always starts at 1, even if the first column of the range selected is not A.
+    b. Since I want the first visit date, I preface my column_index_num value with the MIN() function. 
+        i. Note: Other functions can be used to specify which value to return for each id’s visit dates. MAX() will return the latest visit date. AVG() can be used to average test scores for a participant, etc.
+    c. ‘visit_date’ is the 2nd column, so my column_index_num is 2. 
+    d. Add a comma after the column_index_num to tell Excel you are ready to proceed.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_2.4_excel.png")
+```
+6. Enter TRUE or FALSE for your [range_lookup]. FALSE will only look for exact matches. 
+    a. Typically, you will always want an exact match, so your [range_lookup] will be FALSE.
+    b. In this case, I want an exact match to id 1001 from my az_test spreadsheet to my az_demo spreadsheet, so I enter FALSE.
+    c. Add a close parenthesis to finish the formula. 
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_2.5_excel.png")
+```
+7. Press ‘Enter’ and the formula will complete the VLOOKUP.
+    a. I now have the desired return value of first_visit_date for id 1001.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_2.6_excel.png")
+```
+8. To complete the VLOOKUP for the entire column of id values, drag the green corner to the end of the spreadsheet or double click the small green box when cell N2 is selected.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.show='hold', fig.align = 'center'}
+knitr::include_graphics("vlookup_2.7_excel.png")
+```
+
+References: https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1
+
+
+
+
+
+
+
+
+
+
 
 
 

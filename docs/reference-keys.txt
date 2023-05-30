@@ -12,10 +12,11 @@ sending-data-out
 excel-features-sop
 find
 find-replace
-filter-data
 sort-data
+filter-data
 fill-empty-data
 delete-empty-rows
+vlookup
 ripple-sop
 ripple-general-sop
 registry
