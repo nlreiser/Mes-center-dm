@@ -1,0 +1,85 @@
+# REDCap Reports SOP 
+
+This document functions as an instruction manual for creating a REDCap Report within the Data Request Database. Creating a report allows the user to easily view their or their teams in progress and completed Data Requests. The user can also create their own customized reports as needed. 
+
+For a more thorough guide for creating REDCap Reports in other study databases, view the following guide created by the University of Pennsylvania: [REDCap Creating Reports_UPenn](https://nuwildcat.sharepoint.com/:b:/s/FSM-MesulamCenterDataMgmt/ESkD9lTkWAVOtZ5YtrgY-mEB0uT1oCJda0jJPQc-UTVPCA?e=Tn96sV)
+
+1. Navigate to the Data Request REDCap database. 
+2. Under Applications, click ‘Data Exports, Reports, and Stats’.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.1.png")
+```
+3. On the next page, click on the ‘+ Create New Report’ tab.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.2.png")
+```
+4. Enter information about the New Report.
+    a. Enter a Name of Report. 
+        i. Ex: All PPA Data Requests, Neuropath In-Progress, Nina-Completed
+    b. Optional: Enter a brief Description of the Report.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.3.png")
+```
+5. Select User Access.
+    a. Select if All users or Custom users can view the report.
+    b. Select if All users or Custom users can edit the report.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.4.png")
+```
+6. Select all fields you would like to include in the report. 
+    a. Below is an example of common fields to include in reports that will provide adequate information about the data request and the progress made for each request. 
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.5.png")
+```
+7. Select additional options for your report.
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.6.png")
+```
+8. Add filters to filter the report to specific staff or studies/departments that last worked on the data request. 
+    a. Add the filter for the variable ‘study_last’ and select which study to filter.
+    b. To view a particular staff members’ open requests, add the filter for the variable ‘staff_last’ and select which staff member(s) to filter. 
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.7.png")
+```
+9. Optional: Live Filters
+    a. Live filters can be used after the report has been generated. 
+    b. Ex: Adding the variable ‘data_request_complete allows the user to filter by complete statuses after the report has been generated. 
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.8.png")
+```
+10. Optional: Determine your preferred ordering of the results. 
+    a. Ex: Sort the results first by priority (‘priority_score’) then status (‘rqst_ovstatus’).
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.9.png")
+```
+11. Click the Save Report button. A new screen will open up. Click View report to view. 
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.10.png")
+```
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.11.png")
+```
+12. To view a report previously created, navigate to the ‘My Reports and Exports’ tab from the Reports Page. From here, you can view or export any reports. You can also navigate to the previously created reports from the sidebar. 
+```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+knitr::include_graphics("redcap_reports_1.12.png")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

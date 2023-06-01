@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 5 REDCap Reports SOP | Mesulam Center Data Management Practices</title>
+<meta name="author" content="Nina Reiser">
+<meta name="generator" content="bookdown 0.33 with bs4_book()">
+<meta property="og:title" content="Chapter 5 REDCap Reports SOP | Mesulam Center Data Management Practices">
+<meta property="og:type" content="book">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 5 REDCap Reports SOP | Mesulam Center Data Management Practices">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="bs4_style.css">
+<meta name="description" content="This document functions as an instruction manual for creating a REDCap Report within the Data Request Database. Creating a report allows the user to easily view their or their teams in progress...">
+<meta property="og:description" content="This document functions as an instruction manual for creating a REDCap Report within the Data Request Database. Creating a report allows the user to easily view their or their teams in progress...">
+<meta name="twitter:description" content="This document functions as an instruction manual for creating a REDCap Report within the Data Request Database. Creating a report allows the user to easily view their or their teams in progress...">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Mesulam Center Data Management Practices</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="data-request-sop.html"><span class="header-section-number">2</span> Data Request SOP</a></li>
+<li><a class="" href="excel-features-sop.html"><span class="header-section-number">3</span> Excel Features SOP</a></li>
+<li><a class="" href="ripple-sop.html"><span class="header-section-number">4</span> Ripple SOP</a></li>
+<li><a class="active" href="redcap-reports-sop.html"><span class="header-section-number">5</span> REDCap Reports SOP</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/nlreiser/Mes-center-dm/">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="redcap-reports-sop" class="section level1" number="5">
+<h1>
+<span class="header-section-number">5</span> REDCap Reports SOP<a class="anchor" aria-label="anchor" href="#redcap-reports-sop"><i class="fas fa-link"></i></a>
+</h1>
+<p>This document functions as an instruction manual for creating a REDCap Report within the Data Request Database. Creating a report allows the user to easily view their or their teams in progress and completed Data Requests. The user can also create their own customized reports as needed.</p>
+<p>For a more thorough guide for creating REDCap Reports in other study databases, view the following guide created by the University of Pennsylvania: <a href="https://nuwildcat.sharepoint.com/:b:/s/FSM-MesulamCenterDataMgmt/ESkD9lTkWAVOtZ5YtrgY-mEB0uT1oCJda0jJPQc-UTVPCA?e=Tn96sV">REDCap Creating Reports_UPenn</a></p>
+<ol style="list-style-type: decimal">
+<li>Navigate to the Data Request REDCap database.</li>
+<li>Under Applications, click ‘Data Exports, Reports, and Stats’.
+<img src="redcap_reports_1.1.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>On the next page, click on the ‘+ Create New Report’ tab.
+<img src="redcap_reports_1.2.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>Enter information about the New Report.
+<ol style="list-style-type: lower-alpha">
+<li>Enter a Name of Report.
+<ol style="list-style-type: lower-roman">
+<li>Ex: All PPA Data Requests, Neuropath In-Progress, Nina-Completed</li>
+</ol>
+</li>
+<li>Optional: Enter a brief Description of the Report.
+<img src="redcap_reports_1.3.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</li>
+<li>Select User Access.
+<ol style="list-style-type: lower-alpha">
+<li>Select if All users or Custom users can view the report.</li>
+<li>Select if All users or Custom users can edit the report.
+<img src="redcap_reports_1.4.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</li>
+<li>Select all fields you would like to include in the report.
+<ol style="list-style-type: lower-alpha">
+<li>Below is an example of common fields to include in reports that will provide adequate information about the data request and the progress made for each request.
+<img src="redcap_reports_1.5.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</li>
+<li>Select additional options for your report.
+<img src="redcap_reports_1.6.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>Add filters to filter the report to specific staff or studies/departments that last worked on the data request.
+<ol style="list-style-type: lower-alpha">
+<li>Add the filter for the variable ‘study_last’ and select which study to filter.</li>
+<li>To view a particular staff members’ open requests, add the filter for the variable ‘staff_last’ and select which staff member(s) to filter.
+<img src="redcap_reports_1.7.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</li>
+<li>Optional: Live Filters
+<ol style="list-style-type: lower-alpha">
+<li>Live filters can be used after the report has been generated.</li>
+<li>Ex: Adding the variable ’data_request_complete allows the user to filter by complete statuses after the report has been generated.
+<img src="redcap_reports_1.8.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</li>
+<li>Optional: Determine your preferred ordering of the results.
+<ol style="list-style-type: lower-alpha">
+<li>Ex: Sort the results first by priority (‘priority_score’) then status (‘rqst_ovstatus’).
+<img src="redcap_reports_1.9.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</li>
+<li>Click the Save Report button. A new screen will open up. Click View report to view.
+<img src="redcap_reports_1.10.png" width="100%" style="background-color: #41444B; padding:2px;"><img src="redcap_reports_1.11.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+<li>To view a report previously created, navigate to the ‘My Reports and Exports’ tab from the Reports Page. From here, you can view or export any reports. You can also navigate to the previously created reports from the sidebar.
+<img src="redcap_reports_1.12.png" width="100%" style="background-color: #41444B; padding:2px;">
+</li>
+</ol>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="ripple-sop.html"><span class="header-section-number">4</span> Ripple SOP</a></div>
+<div class="empty"></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#redcap-reports-sop"><span class="header-section-number">5</span> REDCap Reports SOP</a></li></ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/nlreiser/Mes-center-dm//blob/main/04-redcap-reports-sop.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/nlreiser/Mes-center-dm//edit/main/04-redcap-reports-sop.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Mesulam Center Data Management Practices</strong>" was written by Nina Reiser. It was last built on 2023-06-01.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
