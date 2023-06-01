@@ -93,6 +93,7 @@ knitr::include_graphics(c("share_file.png","share_people_specify.png","share_exi
     a. If not yet started, enter 0. 
     b. Update the Percent Complete as progress is made for the data request. 
 10. The NetID will auto-populate for the person who is filling out the form. This can be changed manually as needed.
+11. Enter the study/department(s) of the staff member who is completing the request.
 11.	Enter any notes about the status of the data request.
 12.	Always mark the Form Status ‘Complete’. Save and Exit Form.
 
