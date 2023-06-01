@@ -2,8 +2,10 @@
 
 This document functions as an instruction manual for creating a REDCap Report within the Data Request Database. Creating a report allows the user to easily view their or their teams in progress and completed Data Requests. The user can also create their own customized reports as needed. 
 
-For a more thorough guide for creating REDCap Reports in other study databases, view the following guide created by the University of Pennsylvania: [REDCap Creating Reports_UPenn](https://nuwildcat.sharepoint.com/:b:/s/FSM-MesulamCenterDataMgmt/ESkD9lTkWAVOtZ5YtrgY-mEB0uT1oCJda0jJPQc-UTVPCA?e=Tn96sV)
+For a more thorough guide for creating REDCap Reports in other study databases, view the following guide created by the University of Pennsylvania: <b>[REDCap Creating Reports_UPenn](https://nuwildcat.sharepoint.com/:b:/s/FSM-MesulamCenterDataMgmt/ESkD9lTkWAVOtZ5YtrgY-mEB0uT1oCJda0jJPQc-UTVPCA?e=Tn96sV)</b>
 
+## Create a Mesulam Center Data Requests REDCap Report
+>>>>>>> 0a7925e60bd95e399df62dcc2a3c0a3562dda1e2
 1. Navigate to the Data Request REDCap database. 
 2. Under Applications, click ‘Data Exports, Reports, and Stats’.
 ```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
