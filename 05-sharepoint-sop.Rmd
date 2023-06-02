@@ -44,7 +44,7 @@ knitr::include_graphics("sharepoint_1.3.png")
     b. In SharePoint on a local drive, right click on the file or folder and click “Share”.  
     c. In both cases, the same dialog box will appear.  
         i. Enter the email address in the “To:” field to share the file or folder. 
-```{r, echo=FALSE, fig.cap="", out.width = '100%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
+```{r, echo=FALSE, fig.cap="", out.width = '70%', out.extra='style="background-color: #41444B; padding:2px;"', fig.align = 'center'}
 knitr::include_graphics("sharepoint_1.4.png")
 ```
         ii. An email will be sent to the entered email address with an invitation to the file or folder.  
