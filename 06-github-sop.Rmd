@@ -1,0 +1,14 @@
+# Github SOP 
+
+## Creating a new page on the Mesulam Center Data Management Practices website. 
+1. Create a new r Markdown file and save in the following format: 
+    chapter number-title.Rmd (ex. 06-github-sop.Rmd)
+
+2. Headings:
+A single # is used to title the chapter page. (Github SOP at the top of the page)
+## Double ## is used for a Heading and Section Title in the Table of Contents on 
+the right hand side. 
+### Triple ### is used for a Subheading and Sub-section Title in the Table of Contents 
+on the right hand side. 
+Note: Github and Bookdown automatically numbers the Table of contents based on the 
+saved name of the R Markdown file. 
