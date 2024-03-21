@@ -59,3 +59,5 @@ adding-a-chapter-to-this-site.
 adding-the-rmarkdown-file-locally
 render-the-project-locally
 commit-the-changes
+github-test
+including-plots
