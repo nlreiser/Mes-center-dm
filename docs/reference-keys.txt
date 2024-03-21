@@ -54,3 +54,5 @@ auto-saving-files-in-sharepoint
 download-sharepoint-to-your-local-drive
 share-files
 copy-the-link-to-a-file-or-folder
+github-sop
+creating-a-new-page-on-the-mesulam-center-data-management-practices-website.
