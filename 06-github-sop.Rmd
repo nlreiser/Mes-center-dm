@@ -17,8 +17,7 @@ on the right hand side. \n
 Note: Github and Bookdown automatically numbers the Table of contents based on the 
 saved name of the R Markdown file. 
 
-3. Add Body: \n
-Add body of text as needed. 
+3. Add desired body of text. 
 
 4. Save the Rmarkdown file. Close the file and open the project file in RStudio. 
 
@@ -36,4 +35,8 @@ browseURL("docs/index.html")
 'Commit to main'. 
 11. Open github.com in a new browser window and go to the desired Repository. 
 12. Click on the 'Actions' tab at the top of the page. 
-13. A new workflow will run, titled 'pages build and deployment'. 
+13. A new workflow will run, titled 'pages build and deployment'. To view
+progress, click on the action. You will see a pipeline with the build's progress. 
+If there are no errors, all three steps will have green checkboxes. 
+14. When workflow is complete, click the link under 'deploy' to view the changes
+made to the site. 
