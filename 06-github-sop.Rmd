@@ -22,10 +22,13 @@ saved name of the R Markdown file.
 4. Save the Rmarkdown file. Close the file and open the project file in RStudio. 
 
 ### Render the Project Locally
-5. To render the book, run the following command: \n
+5. To render the book, click 'Build Book' in the Build tab of the Environment
+Tabs or run the following command: \n
 bookdown::render_book("index.Rmd")
+<b>Note: Do not copy and paste from the HTML, it will not work.<b/>   
 6. To view the book in html format, run the following command: 
 browseURL("docs/index.html")
+<b>Note: Do not copy and paste from the HTML, it will not work.<b/>  
 7. Confirm all changes were successfully rendered. 
 
 ### Commit the Changes
@@ -40,3 +43,5 @@ progress, click on the action. You will see a pipeline with the build's progress
 If there are no errors, all three steps will have green checkboxes. 
 14. When workflow is complete, click the link under 'deploy' to view the changes
 made to the site. 
+
+### For additional information, access the README.md file in the Project folder. 
