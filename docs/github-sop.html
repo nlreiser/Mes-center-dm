@@ -19,9 +19,9 @@
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
 <link rel="stylesheet" href="bs4_style.css">
-<meta name="description" content="7.1 Creating a new page on the Mesulam Center Data Management Practices website. Create a new r Markdown file and save in the following format: chapter number-title.Rmd (ex. 06-github-sop.Rmd)...">
-<meta property="og:description" content="7.1 Creating a new page on the Mesulam Center Data Management Practices website. Create a new r Markdown file and save in the following format: chapter number-title.Rmd (ex. 06-github-sop.Rmd)...">
-<meta name="twitter:description" content="7.1 Creating a new page on the Mesulam Center Data Management Practices website. Create a new r Markdown file and save in the following format: chapter number-title.Rmd (ex. 06-github-sop.Rmd)...">
+<meta name="description" content="7.1 Adding a Chapter to this site.  7.1.1 Adding the RMarkdown File Locally In the local Data Request folder for the Mesulam Center Data Management Practices site, open the .Rproj file. Create a...">
+<meta property="og:description" content="7.1 Adding a Chapter to this site.  7.1.1 Adding the RMarkdown File Locally In the local Data Request folder for the Mesulam Center Data Management Practices site, open the .Rproj file. Create a...">
+<meta name="twitter:description" content="7.1 Adding a Chapter to this site.  7.1.1 Adding the RMarkdown File Locally In the local Data Request folder for the Mesulam Center Data Management Practices site, open the .Rproj file. Create a...">
 </head>
 <body data-spy="scroll" data-target="#toc">
 
@@ -61,14 +61,20 @@
 <h1>
 <span class="header-section-number">7</span> Github SOP<a class="anchor" aria-label="anchor" href="#github-sop"><i class="fas fa-link"></i></a>
 </h1>
-<div id="creating-a-new-page-on-the-mesulam-center-data-management-practices-website." class="section level2" number="7.1">
+<div id="adding-a-chapter-to-this-site." class="section level2" number="7.1">
 <h2>
-<span class="header-section-number">7.1</span> Creating a new page on the Mesulam Center Data Management Practices website.<a class="anchor" aria-label="anchor" href="#creating-a-new-page-on-the-mesulam-center-data-management-practices-website."><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.1</span> Adding a Chapter to this site.<a class="anchor" aria-label="anchor" href="#adding-a-chapter-to-this-site."><i class="fas fa-link"></i></a>
 </h2>
+<div id="adding-the-rmarkdown-file-locally" class="section level3" number="7.1.1">
+<h3>
+<span class="header-section-number">7.1.1</span> Adding the RMarkdown File Locally<a class="anchor" aria-label="anchor" href="#adding-the-rmarkdown-file-locally"><i class="fas fa-link"></i></a>
+</h3>
 <ol style="list-style-type: decimal">
-<li><p>Create a new r Markdown file and save in the following format:
-chapter number-title.Rmd (ex. 06-github-sop.Rmd)</p></li>
-<li><p>Headings:
+<li><p>In the local Data Request folder for the Mesulam Center Data Management
+Practices site, open the .Rproj file. Create a new r Markdown file and save it
+in the following format:
+chapter number-title.Rmd (ex: 06-github-sop.Rmd)</p></li>
+<li><p>Add Headings:
 A single # is used to title the chapter page. (Github SOP at the top of the page)
 ## Double ## is used for a Heading and Section Title in the Table of Contents on
 the right hand side.
@@ -76,7 +82,37 @@ the right hand side.
 on the right hand side.
 Note: Github and Bookdown automatically numbers the Table of contents based on the
 saved name of the R Markdown file.</p></li>
+<li><p>Add Body:
+Add body of text as needed.</p></li>
+<li><p>Save the Rmarkdown file. Close the file and open the project file in RStudio.</p></li>
 </ol>
+</div>
+<div id="render-the-project-locally" class="section level3" number="7.1.2">
+<h3>
+<span class="header-section-number">7.1.2</span> Render the Project Locally<a class="anchor" aria-label="anchor" href="#render-the-project-locally"><i class="fas fa-link"></i></a>
+</h3>
+<ol start="5" style="list-style-type: decimal">
+<li>To render the book, run the following command:
+bookdown::render_book(“index.Rmd”)</li>
+<li>To view the book in html format, run the following command:
+browseURL(“docs/index.html”)</li>
+<li>Confirm all changes were successfully rendered.</li>
+</ol>
+</div>
+<div id="commit-the-changes" class="section level3" number="7.1.3">
+<h3>
+<span class="header-section-number">7.1.3</span> Commit the Changes<a class="anchor" aria-label="anchor" href="#commit-the-changes"><i class="fas fa-link"></i></a>
+</h3>
+<ol start="8" style="list-style-type: decimal">
+<li>Open GitHub Desktop. Confirm you are on the correct Repository.</li>
+<li>Click the ‘Fetch Origin’ button to view local changes that are to be committed.</li>
+<li>Review changes, and if everything looks correct, add a summary and click
+‘Commit to main’.</li>
+<li>Open github.com in a new browser window and go to the desired Repository.</li>
+<li>Click on the ‘Actions’ tab at the top of the page.</li>
+<li>A new workflow will run, titled ‘pages build and deployment’.</li>
+</ol>
+</div>
 </div>
 </div>
   <div class="chapter-nav">
@@ -86,7 +122,13 @@ saved name of the R Markdown file.</p></li>
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#github-sop"><span class="header-section-number">7</span> Github SOP</a></li>
-<li><a class="nav-link" href="#creating-a-new-page-on-the-mesulam-center-data-management-practices-website."><span class="header-section-number">7.1</span> Creating a new page on the Mesulam Center Data Management Practices website.</a></li>
+<li>
+<a class="nav-link" href="#adding-a-chapter-to-this-site."><span class="header-section-number">7.1</span> Adding a Chapter to this site.</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#adding-the-rmarkdown-file-locally"><span class="header-section-number">7.1.1</span> Adding the RMarkdown File Locally</a></li>
+<li><a class="nav-link" href="#render-the-project-locally"><span class="header-section-number">7.1.2</span> Render the Project Locally</a></li>
+<li><a class="nav-link" href="#commit-the-changes"><span class="header-section-number">7.1.3</span> Commit the Changes</a></li>
+</ul>
+</li>
 </ul>
 
       <div class="book-extra">

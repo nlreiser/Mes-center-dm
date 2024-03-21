@@ -55,4 +55,7 @@ download-sharepoint-to-your-local-drive
 share-files
 copy-the-link-to-a-file-or-folder
 github-sop
-creating-a-new-page-on-the-mesulam-center-data-management-practices-website.
+adding-a-chapter-to-this-site.
+adding-the-rmarkdown-file-locally
+render-the-project-locally
+commit-the-changes
