@@ -158,7 +158,12 @@ knitr::include_graphics("sharepoint_1.6.png")
 
 
 
-
-
 <!--chapter:end:05-sharepoint-sop.Rmd-->
+
+
+# Github SOP 
+
+Placeholder
+
+<!--chapter:end:06-sharepoint-sop.Rmd-->
 
